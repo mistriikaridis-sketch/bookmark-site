@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI与产品导航 - 专业资源导航平台</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .category {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            margin-bottom: 35px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+        }
+
+        .category-title {
+            font-size: 1.8em;
+            color: #667eea;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            font-weight: 600;
+        }
+
+        .subcategory {
+            margin-bottom: 30px;
+        }
+
+        .subcategory:last-child {
+            margin-bottom: 0;
+        }
+
+        .subcategory-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .subcategory-title::before {
+            content: "▸";
+            color: #764ba2;
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .link-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            display: block;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            border-color: #667eea;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+        }
+
+        .link-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #667eea;
+        }
+
+        .link-desc {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            margin-top: 50px;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1em;
+            }
+
+            .category {
+                padding: 25px;
+            }
+
+            .category-title {
+                font-size: 1.5em;
+            }
+
+            .links {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .icon {
+            display: inline-block;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 AI与产品导航</h1>
+            <p class="subtitle">汇聚行业资讯、AI工具与产品管理精选资源</p>
+        </header>
+
+        <main>
+            <section class="category">
+                <h2 class="category-title">📰 行业资讯与趋势</h2>
+                
+                <div class="subcategory">
+                    <h3 class="subcategory-title">科技媒体</h3>
+                    <div class="links">
+                        <a href="https://36kr.com" class="link-card" target="_blank">
+                            <div class="link-title">36氪</div>
+                            <div class="link-desc">让一部分人先看到未来 - 科技创投资讯</div>
+                        </a>
+                        <a href="https://www.theverge.com" class="link-card" target="_blank">
+                            <div class="link-title">The Verge</div>
+                            <div class="link-desc">国际科技新闻与产品评测</div>
+                        </a>
+                        <a href="https://techcrunch.com" class="link-card" target="_blank">
+                            <div class="link-title">TechCrunch</div>
+                            <div class="link-desc">创业科技与投资动态</div>
+                        </a>
+                        <a href="https://towardsdatascience.com" class="link-card" target="_blank">
+                            <div class="link-title">Towards Data Science</div>
+                            <div class="link-desc">数据科学与机器学习前沿</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h3 class="subcategory-title">品牌营销</h3>
+                    <div class="links">
+                        <a href="https://socialbeta.com" class="link-card" target="_blank">
+                            <div class="link-title">SocialBeta</div>
+                            <div class="link-desc">品牌营销趋势与案例分析</div>
+                        </a>
+                        <a href="https://www.woshipm.com/u/1081845" class="link-card" target="_blank">
+                            <div class="link-title">刀法研究所</div>
+                            <div class="link-desc">营销方法论与品牌增长策略</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h3 class="subcategory-title">数据分析</h3>
+                    <div class="links">
+                        <a href="https://studio.youtube.com" class="link-card" target="_blank">
+                            <div class="link-title">YouTube Studio</div>
+                            <div class="link-desc">视频数据分析与内容洞察</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category">
+                <h2 class="category-title">🤖 AI工具与平台</h2>
+                
+                <div class="subcategory">
+                    <h3 class="subcategory-title">基础大模型</h3>
+                    <div class="links">
+                        <a href="https://ai.baidu.com" class="link-card" target="_blank">
+                            <div class="link-title">百度AI开放平台</div>
+                            <div class="link-desc">全球领先的人工智能服务平台</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h3 class="subcategory-title">垂直应用工具</h3>
+                    <div class="links">
+                        <a href="https://ai-bot.cn" class="link-card" target="_blank">
+                            <div class="link-title">AI工具集官网</div>
+                            <div class="link-desc">1000+ AI工具集合，国内外AI导航大全</div>
+                        </a>
+                        <a href="https://hailuoai.com" class="link-card" target="_blank">
+                            <div class="link-title">MiniMax Audio & Music</div>
+                            <div class="link-desc">AI音乐生成与音频处理工具</div>
+                        </a>
+                        <a href="https://www.remove.bg" class="link-card" target="_blank">
+                            <div class="link-title">Remove.bg</div>
+                            <div class="link-desc">在线抠图软件，一键去除背景</div>
+                        </a>
+                        <a href="https://droidx.ai" class="link-card" target="_blank">
+                            <div class="link-title">DroidX 机器人宇宙</div>
+                            <div class="link-desc">定制你的AI智能体</div>
+                        </a>
+                        <a href="https://www.coze.cn" class="link-card" target="_blank">
+                            <div class="link-title">扣子空间</div>
+                            <div class="link-desc">你的 AI 办公空间，与 Agent 协作</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="subcategory">
+                    <h3 class="subcategory-title">开发平台</h3>
+                    <div class="links">
+                        <a href="https://www.aliyun.com/product/bigdata/learn" class="link-card" target="_blank">
+                            <div class="link-title">阿里云 PAI</div>
+                            <div class="link-desc">人工智能平台 - AI开发全链路工程化</div>
+                        </a>
+                        <a href="https://ai.baidu.com/easydl/solution" class="link-card" target="_blank">
+                            <div class="link-title">EasyDL 应用案例</div>
+                            <div class="link-desc">百度AI开放平台 - 零门槛AI开发</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="category">
+                <h2 class="category-title">💼 产品管理与学习</h2>
+                
+                <div class="subcategory">
+                    <h3 class="subcategory-title">产品经理社区</h3>
+                    <div class="links">
+                        <a href="https://www.pmhome.com" class="link-card" target="_blank">
+                            <div class="link-title">PM HOME</div>
+                            <div class="link-desc">产品经理之家 - 学习与交流平台</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>🌟 持续更新中 | 收藏本页，随时访问优质资源</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">© 2024 AI与产品导航 | 为专业人士精心打造</p>
+        </footer>
+    </div>
+</body>
+</html>
